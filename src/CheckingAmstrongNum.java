@@ -23,10 +23,16 @@ public class CheckingAmstrongNum{
     }
 
     public static void main(String[] args) {
+        int limit = 20000;
 
-        System.out.println("Armstrongovi brojevi između 1 i " + 9999 + " su:");
+        if (limit < 1) {
+            System.out.println("Limit mora biti veći od nule.");
+            return;
+        }
 
-        for (int i = 1; i <= 9999; i++) {
+        System.out.println("Armstrongovi brojevi između 1 i " + limit + " su:");
+
+        for (int i = 1; i <= limit; i++) {
             if (checkingArmstrong(i)) {
                 System.out.println(i);
             }
