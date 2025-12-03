@@ -24,8 +24,6 @@ public class CheckingAmstrongNum{
 
     public static void main(String[] args) {
 
-
-
         System.out.println("Armstrongovi brojevi između 1 i " + 9999 + " su:");
 
         for (int i = 1; i <= 9999; i++) {
